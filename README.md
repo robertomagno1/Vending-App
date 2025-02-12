@@ -11,50 +11,53 @@ Vending App is a Flutter-based mobile application that allows users to find vend
 - 💳 **Make purchases online** via Stripe integration.
 - 🔔 **Receive push notifications** when favorite products are available.
 
+Sure! Let’s simplify it and see if it displays correctly for you. Here’s a minimal version of your project structure:
+
+
+
 vending-app/
-├── backend/                        # Backend API (Node.js, Express, PostgreSQL)
-│   ├── routes/                      # API route handlers
-│   │   ├── auth.js                  # User authentication (JWT, bcrypt)
-│   │   ├── vending.js               # Vending machine & product APIs
-│   │   ├── payment.js               # Stripe payment integration
-│   │   ├── notifications.js         # Firebase notifications API
-│   ├── models/                      # Database models
+├── backend/
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── vending.js
+│   │   ├── payment.js
+│   │   ├── notifications.js
+│   ├── models/
 │   │   ├── userModel.js
 │   │   ├── vendingMachineModel.js
 │   │   ├── productModel.js
-│   ├── config/                      # Configuration files
-│   │   ├── db.js                    # Database connection settings
-│   ├── server.js                    # Main backend entry point
-│   ├── database.sql                 # PostgreSQL database schema
+│   ├── config/
+│   │   ├── db.js
+│   ├── server.js
+│   ├── database.sql
 │
-├── mobile/                         # Flutter Mobile App
-│   ├── lib/                         # Main application directory
-│   │   ├── models/                  # Data models
-│   │   │   ├── vending_machine.dart
-│   │   │   ├── product.dart
-│   │   ├── services/                # API & WebSocket services
-│   │   │   ├── api_service.dart      # Handles API calls
-│   │   │   ├── websocket_service.dart # Handles real-time updates
-│   │   │   ├── notification_service.dart # Firebase push notifications
-│   │   ├── screens/                 # UI screens
-│   │   │   ├── home_screen.dart      # Main map & vending machine locator
-│   │   │   ├── vending_screen.dart   # View vending machine products
-│   │   │   ├── product_screen.dart   # View product details
-│   │   │   ├── login_screen.dart     # User authentication screen
-│   │   │   ├── payment_screen.dart   # Stripe payment interface
-│   │   ├── widgets/                 # Reusable UI components
-│   │   │   ├── product_tile.dart
-│   │   │   ├── vending_tile.dart
-│   │   ├── main.dart                 # Main Flutter app entry point
+├── mobile/
+│   ├── lib/
+│   │   ├── models/
+│   │   ├── services/
+│   │   ├── screens/
+│   │   ├── widgets/
+│   │   ├── main.dart
 │
-├── firebase/                        # Firebase configurations
-│   ├── google-services.json          # Android Firebase config
-│   ├── GoogleService-Info.plist      # iOS Firebase config
+├── firebase/
+│   ├── google-services.json
+│   ├── GoogleService-Info.plist
 │
-├── README.md                        # Project documentation
-├── .env                              # Environment variables (not committed)
-├── .gitignore                        # Files to ignore in Git
-├── LICENSE                           # Open-source license
+├── README.md
+├── .env
+├── .gitignore
+├── LICENSE
+
+
+
+This keeps only the essential structure while using proper Markdown formatting.
+
+Next Steps
+	•	Copy this into your README.md
+	•	Ensure you use triple backticks (```) at the start and end
+	•	Try committing and checking it on GitHub
+
+Let me know if it still doesn’t display correctly! 🚀
 
 
 ---
