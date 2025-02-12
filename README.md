@@ -18,46 +18,46 @@ Vending App is a Flutter-based mobile application that allows users to find vend
 ## 🏗️ Project Structure
 
 vending-app/
-│── backend/                # Backend API (Node.js, Express, PostgreSQL)
-│   │── routes/             # API route handlers
-│   │   ├── auth.js         # User authentication (JWT, bcrypt)
-│   │   ├── vending.js      # Vending machine & products APIs
-│   │   ├── payment.js      # Stripe integration
-│   │   ├── notifications.js# Firebase notifications API
-│   │── models/             # Database schema
-│   │   ├── userModel.js
-│   │   ├── vendingModel.js
-│   │   ├── productModel.js
-│   │── config/             # Configuration files
-│   │── server.js           # Main entry point for backend
-│   │── database.sql        # PostgreSQL database schema
-│── mobile/                 # Flutter Mobile App
-│   │── lib/
-│   │   ├── models/         # Data models
-│   │   │   ├── vending_machine.dart
-│   │   │   ├── product.dart
-│   │   ├── services/       # API & WebSocket services
-│   │   │   ├── api_service.dart
-│   │   │   ├── websocket_service.dart
-│   │   │   ├── notification_service.dart
-│   │   ├── screens/        # Screens of the app
-│   │   │   ├── home_screen.dart
-│   │   │   ├── vending_screen.dart
-│   │   │   ├── product_screen.dart
-│   │   │   ├── login_screen.dart
-│   │   │   ├── payment_screen.dart
-│   │   ├── widgets/        # UI components
-│   │   │   ├── product_tile.dart
-│   │   │   ├── vending_tile.dart
-│   │   ├── main.dart       # Main entry point for Flutter app
-│── firebase/               # Firebase configurations
-│   │── google-services.json # Android Firebase Config
-│   │── GoogleService-Info.plist # iOS Firebase Config
-│── README.md               # Project documentation
-│── .env                    # Environment variables
-│── .gitignore              # Files to ignore in Git
-│── LICENSE                 # Open-source license
-
+│── backend/                        # Backend API (Node.js, Express, PostgreSQL)
+│   │── routes/                      # API route handlers
+│   │   ├── auth.js                  # User authentication (JWT, bcrypt)
+│   │   ├── vending.js               # Vending machine & product APIs
+│   │   ├── payment.js               # Stripe payment integration
+│   │   ├── notifications.js         # Firebase notifications API
+│   │── models/                      # Database models
+│   │   ├── userModel.js             
+│   │   ├── vendingMachineModel.js   
+│   │   ├── productModel.js          
+│   │── config/                      # Configuration files
+│   │   ├── db.js                    # Database connection settings
+│   │── server.js                    # Main backend entry point
+│   │── database.sql                 # PostgreSQL database schema
+│── mobile/                         # Flutter Mobile App
+│   │── lib/                         # Main application directory
+│   │   ├── models/                  # Data models
+│   │   │   ├── vending_machine.dart 
+│   │   │   ├── product.dart         
+│   │   ├── services/                # API & WebSocket services
+│   │   │   ├── api_service.dart      # Handles API calls
+│   │   │   ├── websocket_service.dart # Handles real-time updates
+│   │   │   ├── notification_service.dart # Firebase push notifications
+│   │   ├── screens/                 # UI screens
+│   │   │   ├── home_screen.dart      # Main map & vending machine locator
+│   │   │   ├── vending_screen.dart   # View vending machine products
+│   │   │   ├── product_screen.dart   # View product details
+│   │   │   ├── login_screen.dart     # User authentication screen
+│   │   │   ├── payment_screen.dart   # Stripe payment interface
+│   │   ├── widgets/                 # Reusable UI components
+│   │   │   ├── product_tile.dart     
+│   │   │   ├── vending_tile.dart     
+│   │   ├── main.dart                 # Main Flutter app entry point
+│── firebase/                        # Firebase configurations
+│   │── google-services.json          # Android Firebase config
+│   │── GoogleService-Info.plist       # iOS Firebase config
+│── README.md                        # Project documentation
+│── .env                              # Environment variables (not committed)
+│── .gitignore                        # Files to ignore in Git
+│── LICENSE                           # Open-source license
 ---
 
 ## 📦 Backend Setup (Node.js & Express)
