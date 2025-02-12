@@ -10,32 +10,25 @@ Vending App is a Flutter-based mobile application that allows users to find vend
 - 📦 **View available products** in vending machines in real-time via WebSocket.
 - 💳 **Make purchases online** via Stripe integration.
 - 🔔 **Receive push notifications** when favorite products are available.
-- 📡 **Live updates** using WebSocket communication.
-- 📊 **Admin dashboard** for managing vending machines (Future Work).
-
----
-
-## 🏗️ Project Structure
-
-
 
 vending-app/
-│── backend/                        # Backend API (Node.js, Express, PostgreSQL)
-│   │── routes/                      # API route handlers
+├── backend/                        # Backend API (Node.js, Express, PostgreSQL)
+│   ├── routes/                      # API route handlers
 │   │   ├── auth.js                  # User authentication (JWT, bcrypt)
 │   │   ├── vending.js               # Vending machine & product APIs
 │   │   ├── payment.js               # Stripe payment integration
 │   │   ├── notifications.js         # Firebase notifications API
-│   │── models/                      # Database models
+│   ├── models/                      # Database models
 │   │   ├── userModel.js
 │   │   ├── vendingMachineModel.js
 │   │   ├── productModel.js
-│   │── config/                      # Configuration files
+│   ├── config/                      # Configuration files
 │   │   ├── db.js                    # Database connection settings
-│   │── server.js                    # Main backend entry point
-│   │── database.sql                 # PostgreSQL database schema
-│── mobile/                         # Flutter Mobile App
-│   │── lib/                         # Main application directory
+│   ├── server.js                    # Main backend entry point
+│   ├── database.sql                 # PostgreSQL database schema
+│
+├── mobile/                         # Flutter Mobile App
+│   ├── lib/                         # Main application directory
 │   │   ├── models/                  # Data models
 │   │   │   ├── vending_machine.dart
 │   │   │   ├── product.dart
@@ -53,13 +46,16 @@ vending-app/
 │   │   │   ├── product_tile.dart
 │   │   │   ├── vending_tile.dart
 │   │   ├── main.dart                 # Main Flutter app entry point
-│── firebase/                        # Firebase configurations
-│   │── google-services.json          # Android Firebase config
-│   │── GoogleService-Info.plist       # iOS Firebase config
-│── README.md                        # Project documentation
-│── .env                              # Environment variables (not committed)
-│── .gitignore                        # Files to ignore in Git
-│── LICENSE                           # Open-source licensed
+│
+├── firebase/                        # Firebase configurations
+│   ├── google-services.json          # Android Firebase config
+│   ├── GoogleService-Info.plist      # iOS Firebase config
+│
+├── README.md                        # Project documentation
+├── .env                              # Environment variables (not committed)
+├── .gitignore                        # Files to ignore in Git
+├── LICENSE                           # Open-source license
+
 
 ---
 
