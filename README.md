@@ -15,31 +15,31 @@ Sure! Let’s simplify it and see if it displays correctly for you. Here’s a m
 
 
 
-vending-app/
-├── backend/
-│   ├── routes/
+vending-app
+├── backend
+│   ├── routes
 │   │   ├── auth.js
 │   │   ├── vending.js
 │   │   ├── payment.js
 │   │   ├── notifications.js
-│   ├── models/
+│   ├── models
 │   │   ├── userModel.js
 │   │   ├── vendingMachineModel.js
 │   │   ├── productModel.js
-│   ├── config/
+│   ├── config
 │   │   ├── db.js
 │   ├── server.js
 │   ├── database.sql
 │
-├── mobile/
-│   ├── lib/
+├── mobile
+│   ├── lib
 │   │   ├── models/
 │   │   ├── services/
 │   │   ├── screens/
 │   │   ├── widgets/
 │   │   ├── main.dart
 │
-├── firebase/
+├── firebase
 │   ├── google-services.json
 │   ├── GoogleService-Info.plist
 │
