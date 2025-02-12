@@ -60,6 +60,7 @@ vending-app/
 │── LICENSE                           # Open-source license
 ---
 
+
 ## 📦 Backend Setup (Node.js & Express)
 
 ### 🔹 Prerequisites
