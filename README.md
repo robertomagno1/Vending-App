@@ -22,13 +22,13 @@ Vending App is a Flutter-based mobile application that allows users to find vend
 
 PORT=5000
 DB_USER=postgres
-DB_PASSWORD=yourpassword
+DB_PASSWORD= must-be-set
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=vending_db
 JWT_SECRET=supersecuresecret
 STRIPE_SECRET_KEY=sk_test_xxx
-GOOGLE_MAPS_API_KEY=xxx
+GOOGLE_MAPS_API_KEY= must-be-set
 
 ### 🔹 Install Dependencies
 ```sh
