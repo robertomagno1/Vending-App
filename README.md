@@ -17,6 +17,8 @@ Vending App is a Flutter-based mobile application that allows users to find vend
 
 ## 🏗️ Project Structure
 
+
+
 vending-app/
 │── backend/                        # Backend API (Node.js, Express, PostgreSQL)
 │   │── routes/                      # API route handlers
@@ -25,9 +27,9 @@ vending-app/
 │   │   ├── payment.js               # Stripe payment integration
 │   │   ├── notifications.js         # Firebase notifications API
 │   │── models/                      # Database models
-│   │   ├── userModel.js             
-│   │   ├── vendingMachineModel.js   
-│   │   ├── productModel.js          
+│   │   ├── userModel.js
+│   │   ├── vendingMachineModel.js
+│   │   ├── productModel.js
 │   │── config/                      # Configuration files
 │   │   ├── db.js                    # Database connection settings
 │   │── server.js                    # Main backend entry point
@@ -35,8 +37,8 @@ vending-app/
 │── mobile/                         # Flutter Mobile App
 │   │── lib/                         # Main application directory
 │   │   ├── models/                  # Data models
-│   │   │   ├── vending_machine.dart 
-│   │   │   ├── product.dart         
+│   │   │   ├── vending_machine.dart
+│   │   │   ├── product.dart
 │   │   ├── services/                # API & WebSocket services
 │   │   │   ├── api_service.dart      # Handles API calls
 │   │   │   ├── websocket_service.dart # Handles real-time updates
@@ -48,8 +50,8 @@ vending-app/
 │   │   │   ├── login_screen.dart     # User authentication screen
 │   │   │   ├── payment_screen.dart   # Stripe payment interface
 │   │   ├── widgets/                 # Reusable UI components
-│   │   │   ├── product_tile.dart     
-│   │   │   ├── vending_tile.dart     
+│   │   │   ├── product_tile.dart
+│   │   │   ├── vending_tile.dart
 │   │   ├── main.dart                 # Main Flutter app entry point
 │── firebase/                        # Firebase configurations
 │   │── google-services.json          # Android Firebase config
@@ -57,7 +59,8 @@ vending-app/
 │── README.md                        # Project documentation
 │── .env                              # Environment variables (not committed)
 │── .gitignore                        # Files to ignore in Git
-│── LICENSE                           # Open-source license
+│── LICENSE                           # Open-source licensed
+
 ---
 
 
