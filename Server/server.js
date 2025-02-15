@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
 const paymentRoutes = require("./routes/payment");
 const notificationRoutes = require("./routes/notifications");
 
+// updeted for notifications
 app.use("/api/payment", paymentRoutes);
 app.use("/api/notifications", notificationRoutes);
 
