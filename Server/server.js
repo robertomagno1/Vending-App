@@ -21,6 +21,11 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
+const paymentRoutes = require("./routes/payment");
+const notificationRoutes = require("./routes/notifications");
+
+app.use("/api/payment", paymentRoutes);
+app.use("/api/notifications", notificationRoutes);
 
 // Avvio del server
 const PORT = process.env.PORT || 5000;
