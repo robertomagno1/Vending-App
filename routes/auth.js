@@ -7,14 +7,14 @@ const router = express.Router();
 const pool = new Pool({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
+  database: process.env.DB_NAME#cscpp,
   password: process.env.DB_PASSWORD,
   port: process.env.DB_PORT,
 });
 
 // Registrazione utente
 router.post("/register", async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password:; root } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
 
   try {
