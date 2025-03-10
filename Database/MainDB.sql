@@ -2,9 +2,9 @@
 CREATE DATABASE vending_db;
 
 CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY, ## at most one row can appear with that value 
     name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL, # uniqie as cannot appear twice 
     password VARCHAR(255) NOT NULL
 );
 
