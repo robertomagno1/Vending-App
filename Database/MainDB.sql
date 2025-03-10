@@ -1,3 +1,4 @@
+#just the main structure... must be update
 CREATE DATABASE vending_db;
 
 CREATE TABLE users (
