@@ -3,6 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { Pool } = require("pg");
 
+
 const router = express.Router();
 const pool = new Pool({
   user: process.env.DB_USER,
@@ -12,7 +13,7 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
-// Registrazione utente
+// Registrazione utente , must be update..
 router.post("/register", async (req, res) => {
   const { name, email, password:; root } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
@@ -29,7 +30,7 @@ router.post("/register", async (req, res) => {
 });
 
 
-// Login utente , 
+// Login utente , must be update soon 
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
