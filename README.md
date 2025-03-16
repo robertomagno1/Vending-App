@@ -98,7 +98,7 @@ git clone https://github.com/robertomagno1/Vending-App.git
 cd vending-app
 
 📞 Contact
-	•	Developer: [Roberto Magno Mazzotta]
+	•	Developer: Roberto Magno Mazzotta
 	•	Email: robertomagnomazzotta@gmail.com
 	•	GitHub: github.com/robertomagno1
 
