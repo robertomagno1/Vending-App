@@ -13,7 +13,7 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
-// Registrazione utente , must be update..
+// Registrazione utente , must be update.
 router.post("/register", async (req, res) => {
   const { name, email, password:; root } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
